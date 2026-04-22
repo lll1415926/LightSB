@@ -27,6 +27,42 @@ Note that we use `wandb` ([link](https://wandb.ai/site)) dashboard system when l
 
 ```notebooks/LightSB_alae.ipynb``` - Code for image experiments with ALAE.
 
+## Parent-to-children experiment
+Besides the image-translation setup, this repository also contains a
+**parent-to-children latent transport** experiment. In this setting, the source
+is a pair of parent latents `(z_f, z_m)` and the target is a child latent `y`.
+
+The main entry point is:
+
+`run_parent_child_static_experiment.py` - trains a conditional static
+Schrodinger / entropic-OT model from joint parent latents to child latents.
+
+The underlying model lives in:
+
+`src/conditional_static_lightsb.py` - static LightSB-style conditional model
+for `(father latent, mother latent) -> child latent`.
+
+The script accepts either:
+
+1. A user-provided `.npz` dataset containing `z_f`, `z_m`, `y`, and optionally
+   `a` and `split`.
+2. A synthetic dataset via `--synthetic` for quick smoke tests.
+
+Expected `.npz` arrays:
+
+- `z_f`: father latents with shape `[N, d]`
+- `z_m`: mother latents with shape `[N, d]`
+- `y`: child latents with shape `[N, d]`
+- `a` (optional): integer condition labels with shape `[N]`
+- `split` (optional): train/test split labels
+
+Example commands:
+
+```bash
+python run_parent_child_static_experiment.py --synthetic --latent-dim 32
+python run_parent_child_static_experiment.py --data-path path/to/parent_child_latents.npz --latent-dim 32
+```
+
 ## Discrete multi-stage view
 For the image translation setup, we can interpret multi-stage LightSB as a
 **discrete Schrödinger bridge** built on a sequence of intermediate marginals,
