@@ -1,0 +1,178 @@
+
+<!-- saved from url=(0059)http://parnec.nuaa.edu.cn/xtan/data/ClosedEyeDatabases.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>The Closed Eyes in the Wild (CEW) dataset</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: Times, serif;
+	font-size: 18px;
+}
+.STYLE3 {font-family: Times, serif; font-size: 18px; font-weight: bold; }
+.STYLE4 {font-family: Times, serif}
+.STYLE5 {font-size: 18px}
+.STYLE7 {font-family: Times, serif; font-size: 14px; }
+.STYLE8 {
+	font-family: Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.STYLE9 {
+	font-family: Times, serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+.STYLE10 {
+	font-family: Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+.STYLE11 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+
+<table width="1029" align="center">
+	<tbody><tr>
+		<td width="1021">
+		<font face="Microsoft Sans Serif">
+		<b>[<a href="publication.htm">Back</a>]</b>
+		</font>
+		<hr size="2" width="100%" noshade="" style="color: #1188FF" align="center">
+		<p></p>
+		<h1 align="center" class="STYLE9"><font face="Microsoft Sans Serif">Tri-subject Kinship Face Database  (TSKinFace)
+		</font> </h1>
+	    <p></p>	
+		<hr size="2" width="100%" noshade="" style="color: #1188FF" align="center">
+		
+		<strong>
+		<p></p>
+		</strong>
+		<h2 class="STYLE10"><font face="Microsoft Sans Serif">TSKinFace Database [1]</font></h2>
+		<strong>
+		<p></p></strong>
+		<div style="margin-left: 20px">
+			<span class="STYLE3"><font face="Microsoft Sans Serif">Overview:			
+			</font>			</span>
+			<div style="margin-left: 20px">
+				<p><span class="STYLE1"><font face="Microsoft Sans Serif">The aim of kinship verification through computer vision  is predicting whether given images have kin relation. Kinship verification is an emerging problem  which is full of challenging  due to the fact the appearance gap encountered in a kinship problem is much larger than that in a conventional face recognition setting(e.g, given two face images with different sex and different ages, verify whether those subjects are father and daughter).</font></span></p>
+				<p class="STYLE1"><font face="Microsoft Sans Serif">Most of current research,however,mainly focus on the one-versus-one[2] or one-versus-multi[3] kinship realtion.Instead we focus on the child-parents(one-versus-two) relationship. We call this tri-subject kinship verification. To investigate the performance of tri-subject kinship verification for this scene, we collected a database in the Wild. All images in the database are harvested from
+				  the internet based on knowledge of public figures family
+			    and photo-sharing social network such as flickr.com. Family facial images are collected based on the  face region and eye position automatically and respectively estimated by the face detector[4] and eye localization[5]. We resize the cropped  faces to the size 64×64 (pixels).</font></p>
+			    <p class="STYLE1"><font face="Microsoft Sans Serif">In particular, we are interested in three kinds of child-parents families in real life, i.e., Father-Mother-Daughter
+			    (FM-D), Father-Mother-Son (FM-S) and Father-Mother-Son-
+			    Daughter (FM-SD). For each type, we collected 274, 285 and
+			    228 family photos respectively, with one photo per family.
+			    Using these, we constructed two kinds of family-based kinship
+			    relations in the TSKinFace database: Father-Mother-Son(FM-S) and Father-Mother-Daughter(FM-D). The FM-S and the
+			    FM-D contain 513 and 502 groups of tri-subject kinship
+			    relations, respectively. Hence we have 1015 tri-subject groups in our database totally. The families included
+			    in our database are diverse in terms of races as well. For FM-S
+			    relation, there are 343 and 170 groups of tri-subject kinship
+			    relations for Asian and non-Asian, respectively. And for FM-D relation, the numbers for Asian and non-Asian groups are
+		      respectively 331 and 171.</font></p>
+				<p class="STYLE1"><font face="Microsoft Sans Serif">Figure1 shows some image groups of child-parents pair from
+				  our TSKinFace database. </font> 			    </p>
+				<p align="center">
+				<font face="Microsoft Sans Serif">
+				<img src="TSKinFace dataset/fig1.jpg" width="827" height="190"></font></p>
+				<p align="left" class="STYLE1">
+				<font face="Microsoft Sans Serif">Figure 
+				1: Some family image groups of our TSKinFace database, where each
+				group consists of a family triple of a father, a mother and a child. The first row
+				shows three Father-Mother-Daughter (FM-D) relation families, respectively
+				and the second row are three Father-Mother-Son (FM-S) relation families,
+				accordingly.</font></p>
+			</div>
+		</div>
+		<div style="margin-left: 20px"><span class="STYLE3">
+			<font face="Microsoft Sans Serif">How to Get It?</font></span><font face="Microsoft Sans Serif">
+			</font>
+		  <div style="margin-left: 20px">
+                <p> <span class="STYLE1"><font face="Microsoft Sans Serif">We provide 
+		two versions of the database for you to download: 1) raw family images 
+		with background, 2) group images warped,as follows, [</font><font face="Microsoft Sans Serif"><a href="https://drive.google.com/file/d/1qhxX4YrJRXvxrybxQo0yGhkwUdmen-js/view?usp=sharing">download]</a>.&nbsp; 
+				SIFT features &nbsp;
+		<a href="https://drive.google.com/file/d/183JKdn_Ofl3l7L8MJ-xsVIMM2MGzvWfO/view?usp=sharing">download</a>. </font></span></p>
+                <p class="STYLE1"><font face="Microsoft Sans Serif">(1): family images in 
+                  original resolution.</font></p>
+                <p> <font face="Microsoft Sans Serif"> <img border="0" src="TSKinFace dataset/FMD-3.jpg" width="300" height="208"> <img border="0" src="TSKinFace dataset/FMS-200.jpg" width="300" height="208"></font></p>
+                <p>　</p>
+                <p class="STYLE1"><font face="Microsoft Sans Serif">(2): group images in 
+				size of 64×64.</font></p>
+                <p> <font face="Microsoft Sans Serif"> <img src="TSKinFace dataset/FMD-3-F.jpg" width="135" height="157"><img src="TSKinFace dataset/FMD-3-M.jpg" width="135" height="157"><img src="TSKinFace dataset/FMD-3-D.jpg" width="135" height="157"> <img src="TSKinFace dataset/FMS-200-F.jpg" width="135" height="157"><img src="TSKinFace dataset/FMS-200-M.jpg" width="135" height="157"><img src="TSKinFace dataset/FMS-200-S.jpg" width="135" height="157"></font></p>
+          </div>
+	      </div>
+		<p class="STYLE1"><font face="Microsoft Sans Serif"><strong><span class="STYLE11">Other 
+		  Materials Related to [1]</span>&nbsp;</strong></font></p>
+		<div style="margin-left: 20px">
+		  <p><span class="STYLE4"><span class="STYLE5"><a href="http://www.kinfacew.com/">
+			<font face="Microsoft Sans Serif">KinFaceW 
+			database</font></a></span></span><strong><span class="STYLE4"><span class="STYLE5"><font face="Microsoft Sans Serif">:&nbsp; 
+			</font> </span></span></strong>
+		    <span class="STYLE1"><font face="Microsoft Sans Serif">one-versus-one kinship images  used in [1] 
+		  from this dataset. &nbsp;</font></span></p>
+			<p class="STYLE1"><font face="Microsoft Sans Serif"><a href="http://users.cis.fiu.edu/~rfang/kin_classify.html">Family101</a>: one-versus-multi kinship images used in [1] 
+			from this dataset. &nbsp;</font></p>
+		  </div>
+		<p class="STYLE1"><font face="Microsoft Sans Serif">
+		<span class="STYLE11"><strong>Codes in Matlab </strong></span></font>
+		</p>
+		<p align="left"><span class="STYLE1"><font face="Microsoft Sans Serif">&nbsp;
+		<a href="https://drive.google.com/file/d/15K-rQMvvB7nYtO7AatZfORd9SG901YC6/view?usp=sharing">download</a>. </font></span></p>
+		<p align="left">　</p>
+		<h3 class="STYLE10"><font face="Microsoft Sans Serif">References:</font></h3>
+		<div style="margin-left: 20px">
+			<p><span class="STYLE1"><font face="Microsoft Sans Serif" size="3">[1] 
+			</font></span><font face="Microsoft Sans Serif">Xiaoqian Qin, Xiaoyang Tan,Songcan Chen, Tri-Subject Kinship Verification: Understanding the
+			Core of A Family, IEEE Transactions on Multimedia, &nbsp;Accepted, 2015.</font></p>
+			<p class="STYLE1"><font face="Microsoft Sans Serif" size="3">[2] J. Lu, X. Zhou, Y.-P. Tan, Y. Shang, J. Zhou, Neighborhood repulsed
+			  metric learning for kinship verification, IEEE Trans. Pattern Anal. Mach.
+		    Intell. 36 (2) (2014) 331–345.</font></p>
+			<p class="STYLE1"><font face="Microsoft Sans Serif" size="3">[3] R. Fang, A. C. Gallagher, T. Chen, A. Loui, Kinship classification by
+		    modeling facial feature heredity, in: ICIP’13, 2013.</font></p>
+			<p class="STYLE1"><font face="Microsoft Sans Serif" size="3">[4] P.Viola and 
+			M.J.Jones. <strong style="font-weight: 400">Robust real-time face detection</strong><em>.</em> 
+			International Journal of Computer Vision (IJCV), 57(2):137-154, 
+			2004. </font> </p>
+			<p class="STYLE1"><font face="Microsoft Sans Serif" size="3">[5] X.Tan, F.Song, 
+			Z-H.Zhou and S.Chen. <strong style="font-weight: 400">Enhanced Pictorial Structures for 
+			Precise Eye Localization under Uncontrolled Conditions</strong>, In: 
+			Proceedings of IEEE Computer Society Conference on Computer Vision 
+			and Pattern Recognition (CVPR'09),pp. 1621–1628, Miami, Florida, 
+			USA, June 2009. </font> </p>
+			<p class="STYLE1">　</p>
+		</div>
+		<p></p>
+		<h3 class="STYLE8"><font face="Microsoft Sans Serif">Copyright and disclaimer:</font></h3>
+		<div style="margin-left: 20px">
+			<span class="STYLE7"><font face="Microsoft Sans Serif">Copyright 2015, Xiaoyang 
+			Tan </font>			</span>
+			<p class="STYLE7"><font face="Microsoft Sans Serif">The dataset is provided for research purposes to a researcher only and not for 
+			any commercial use. Please do not release the data or redistribute 
+			this link to anyone else without our permission. Contact&nbsp;{x.tan}@nuaa.edu.cn&nbsp;if any question.</font></p>
+			<p class="STYLE7"><font face="Microsoft Sans Serif">If you use this dataset, 
+			please cite it as,</font></p>
+			<p class="STYLE7"><font face="Microsoft Sans Serif">Xiaoqian Qin, Xiaoyang Tan,Songcan Chen, 
+			Tri-Subject Kinship Verification: Understanding the Core of A 
+			Family. </font> 
+			<span lang="EN-US" style="FONT-FAMILY: 'Microsoft Sans Serif'">&nbsp;IEEE Transactions on Multimedia, 201</span><span style="font-family: Microsoft Sans Serif" lang="en-us">5</span><font face="Microsoft Sans Serif"><br>
+			</font>
+			</p>
+		</div>	  </td>
+	</tr>
+	<tr>
+		<td>　</td>
+	</tr>
+</tbody></table>
+<hr size="2" width="100%" noshade="" style="color: #1188FF" align="center">
+<p>　</p>
+<p>　</p>
+
+
+
+
+</body></html>

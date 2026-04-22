@@ -1,0 +1,38 @@
+=== LightSB_ALAE_MAN_TO_WOMAN_EPSILON_0.1 ===
+Output: E:\X\2A\PSC\LightSB\checkpoints\LightSB_ALAE_MAN_TO_WOMAN_EPSILON_0.1
+
+[1/4] Loading data...
+  Source (MAN) train: 26732, test: 4351
+  Target (WOMAN) train: 32816
+
+[2/4] Initialising LightSB...
+
+[3/4] Training LightSB...
+Traceback (most recent call last):
+  File "E:\X\2A\PSC\LightSB\run_alae_experiment.py", line 96, in <module>
+    wandb.init(name=EXP_NAME, config=dict(
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\wandb_init.py", line 1595, in init
+    get_sentry().reraise(e)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\analytics\sentry.py", line 190, in reraise
+    raise exc.with_traceback(tb)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\wandb_init.py", line 1578, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\wandb_init.py", line 894, in init
+    service = self._wl.ensure_service()
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\wandb_setup.py", line 387, in ensure_service
+    self._connection = service_connection.connect_to_service(
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_connection.py", line 51, in connect_to_service
+    return _start_and_connect_service(asyncer, settings)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_connection.py", line 64, in _start_and_connect_service
+    proc = service_process.start(settings)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_process.py", line 35, in start
+    get_sentry().reraise(e)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\analytics\sentry.py", line 190, in reraise
+    raise exc.with_traceback(tb)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_process.py", line 33, in start
+    return _launch_server(settings)
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_process.py", line 105, in _launch_server
+    token = service_port_file.poll_for_token(
+  File "D:\anaconda3\envs\lightsb\lib\site-packages\wandb\sdk\lib\service\service_port_file.py", line 63, in poll_for_token
+    raise ServicePollForTokenError(
+wandb.sdk.lib.service.service_port_file.ServicePollForTokenError: Failed to read port info after 30.0 seconds.
